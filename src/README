@@ -3,4 +3,6 @@ pjysicslist.hh , .cc : user physics list
 
 OTDetectorConstruction.hh , .cc : detector set up 
 
+OTPrimaryGeneratorAction.hh , .cc : primary particle set up (muon minus particle , 4Gev)
+
 그 외 : 데이터 분석 틀 
