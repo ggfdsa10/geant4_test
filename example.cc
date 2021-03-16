@@ -35,7 +35,7 @@ int main(int argc, char** argv)
   runManager -> SetUserAction(new OTEventAction());
   runManager -> SetUserAction(new track());
   runManager -> SetUserAction(new OTSteppingAction());
-  runManager -> Initialize();
+  //runManager -> Initialize();
   
   G4VisManager* visManager = new G4VisExecutive;
   visManager -> Initialize();
@@ -50,6 +50,7 @@ int main(int argc, char** argv)
   else 
   {
     G4UIExecutive* ui = new G4UIExecutive(argc, argv);
+    UImanager -> ApplyCommand("/control/execute myrun");
     UImanager -> ApplyCommand("/control/execute vis.mac");
     UImanager -> ApplyCommand("/run/beamOn 10000");
     ui -> SessionStart();
