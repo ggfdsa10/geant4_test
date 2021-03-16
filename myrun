@@ -1,1 +1,3 @@
-/run/beamOn 10000
+/cuts/setLowEdge 1 eV
+/run/setCutForAGivenParticle e- 0.001 fm
+/run/initialize
