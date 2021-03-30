@@ -49,8 +49,8 @@ G4VPhysicalVolume* OTDetectorConstruction::Construct()
 
   G4Material *p10 = nullptr;
   p10 = new G4Material("matP10", P10density, 2, kStateGas, Temperature);
-  p10 -> AddMaterial(ArGas, 0.9 *perCent);
-  p10 -> AddMaterial(MethaneGas, 0.1 *perCent);
+  p10 -> AddMaterial(ArGas, 90 *perCent);
+  p10 -> AddMaterial(MethaneGas, 10 *perCent);
 
 
   G4Box* solidDetector = new G4Box("Detector", 5.*cm, 5.*cm, 5.*cm);
